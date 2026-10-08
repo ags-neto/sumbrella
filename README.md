@@ -19,3 +19,16 @@ pushed, change it on the router as well as in `secrets.h`.
 scheduled channels (`THINGHTTP_KEY_TODAY`, `THINGHTTP_KEY_TMRW`,
 `THINGHTTP_KEY_AFTMRW`). They used to be hard-coded in the sketch; the old
 values were committed, so they must be regenerated in ThingHTTP.
+
+## Dependencies
+
+`Projeto.ino` needs the third-party DS3231 RTC library — Rinky-Dink Electronics,
+Henning Karlsen, version 1.01 (25 Aug 2014), http://www.RinkyDinkElectronics.com/.
+It is **not** vendored here: it is CC BY-NC-SA 3.0 (non-commercial), which cannot
+be mixed with this repository's MIT licence. Install it separately — see
+[DEPENDENCIAS.md](DEPENDENCIAS.md).
+
+## License
+
+MIT — see [LICENSE](LICENSE). The DS3231 library is third-party, is not
+redistributed here and keeps its own licence (CC BY-NC-SA 3.0).
