@@ -1,2 +1,26 @@
-# Local WiFi credentials (see Fetch_rain/secrets.h.example)
+# Local WiFi credentials and ThingHTTP API keys (see Fetch_rain/secrets.h.example)
 secrets.h
+
+# PlatformIO build output and installed dependencies
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Compiler and linker artefacts
+*.bin
+*.elf
+*.hex
+*.map
+*.lst
+*.o
+*.d
+*.a
+*.ino.cpp
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

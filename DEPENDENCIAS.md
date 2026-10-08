@@ -20,3 +20,24 @@ foi retirada do repositório e tem de ser instalada à parte:
 
 A remoção foi feita **no repositório** (índice e histórico a partir daqui); não
 apaga nenhuma cópia da biblioteca que exista fora do Git, no disco do autor.
+
+## Como a dependência é declarada agora
+
+`lib_deps` em `platformio.ini` (projecto do `Projeto.ino`):
+
+```ini
+lib_deps =
+    https://github.com/whonore/DS3231.git#v1.01
+```
+
+A biblioteca **não está no registry oficial do PlatformIO**: foram verificados
+os 87 resultados da pesquisa por `DS3231` e nenhum expõe a API que `Projeto.ino`
+usa (`class Time` com o campo `hour`, `char *getTimeStr()`, e o construtor
+`DS3231(data_pin, sclk_pin)`). Por isso fica fixa à tag `v1.01` de um espelho,
+cujos ficheiros foram comparados byte a byte com o `libs/DS3231` que saiu deste
+repositório: `DS3231.h`, `DS3231.cpp`, `hardware/avr/HW_AVR.h`,
+`hardware/avr/HW_AVR_defines.h`, `keywords.txt` e `Documentation/version.txt`
+têm o mesmo SHA-256, e `version.txt` diz 1.01 (25 de Agosto de 2014).
+
+O espelho é uma cópia da biblioteca original, redistribuída sob a mesma licença
+CC BY-NC-SA 3.0; continua a não ser este repositório a redistribuí-la.
