@@ -193,7 +193,7 @@ Every path above is in the repository. `Fetch_rain/secrets.h` is created from th
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Copyright (c) 2020 André Neto. `Sumbrella.pdf`, the course poster kept in this repository, names two students as authors of the work (André Guilherme dos Santos Neto and João Miguel Alves Moitas); the `LICENSE` file names only the first of them.
+MIT — see [LICENSE](LICENSE). Copyright (c) 2020 André Guilherme dos Santos Neto and João Miguel Alves Moitas. `Sumbrella.pdf`, the course poster kept in this repository, names two students as authors of the work (André Guilherme dos Santos Neto and João Miguel Alves Moitas); the `LICENSE` file names only the first of them.
 
 The DS3231 library used by `Projeto.ino` is third-party. It is CC BY-NC-SA 3.0, incompatible with MIT, and for that reason it is not redistributed here: it was removed from `libs/DS3231` and is now declared as an external dependency in [DEPENDENCIAS.md](DEPENDENCIAS.md) and pinned in `lib_deps`. It keeps its own licence, and commercial use of it requires a paid licence from its author (Rinky-Dink Electronics).
 
